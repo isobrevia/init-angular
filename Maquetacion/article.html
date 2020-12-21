@@ -7,19 +7,6 @@
         <!--HOJA DE ESTILOS-->
         <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
 
-        <!--CARGA SCRIPTS-->
-        <!-- <script type="text/javascript">
-            // window.addEventListener("load", function() {
-            window.addEventListener("DOMContentLoaded", function() {
-                alert("vamo a emesar");
-                var template = document.getElementById("article-template");
-            var clonar=template.cloneNode(true);
-
-            for (var i = 0; i<=5; i++){
-                alert("Estamos en " +i);
-            }
-            });
-        </script> -->
     </head>
     <body>
         <header id="header">
@@ -46,54 +33,28 @@
                 <!--LIMPIAR FLOTADOS-->
                 <div class ="clearfix"></div>
             </div>
-        </header>
-
-            <div id="slider" class="slider-big">
-                <h1>Bienvenido al curso de Angular</h1>
-                <a href="" class="btn-white">Ir al blog</a>
-
-            </div>
 
             <div class="center">
                 <section id="content">
-                    <h2 class="subheader">Últimos artículos</h2>                   
-                     <script type="text/javascript">
-                         // window.addEventListener("load", function() {
-                        window.addEventListener("load", function() {
-                            var template = document.getElementById("article-template");
-                            var clonado;
-
-                            var articles = document.getElementById("articles");
-
-                            for (var i = 0; i<=5; i++){
-                                // alert("Estamos en " +i);
-                                clonado= template.cloneNode(true);
-                                clonado.removeAttribute("id");
-                                var h2 = clonado.getElementsByTagName("h2")[0];
-                                h2.innerHTML = h2.textContent + ' ' + i;
-                                articles.appendChild(clonado);
-                            }
-                         });
-                    </script>
-
-                    <div id="articles">
-                        <article class="article-item" id="article-template">
+                        <article class="article-item article-detail">
                             <div class="image-wrap">
                                 <img src="assets/images/paisaje.jpeg" alt="Paisaje" />
                             </div>
                             
-                            <h2>Artículo de prueba</h2>
+                            <h1 class="subheader">Artículo de prueba</h1>
                             <span class="date">
                                 Hace 5 minutos
                             </span>
-                            <a href="#">Leer más</a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu tristique lectus. Nullam volutpat vulputate diam id ultricies. Integer eget erat quis metus tempus vestibulum bibendum blandit orci. Nam dapibus posuere nisi sit amet varius. Integer luctus, est non faucibus rhoncus, ipsum tellus viverra lectus, non vulputate sapien mauris at nunc. In tincidunt rhoncus libero, euismod accumsan nisi aliquam in. Vestibulum et auctor est. Nam blandit leo nec quam maximus sodales. Phasellus auctor ipsum ac massa posuere vehicula. Fusce sagittis ac odio vel efficitur. Proin non tincidunt metus. Phasellus molestie pharetra libero sed porta.
+                            </p>
+                            <p>
+Pellentesque ornare neque purus, ut feugiat eros aliquam nec. Sed a dapibus lorem, non euismod ligula. Mauris in odio nunc. Cras id mauris mi. Quisque eros lectus, dictum id rutrum at, tempus ac magna. Integer accumsan porta dolor, sit amet congue enim iaculis ac. Suspendisse potenti. Ut vitae risus non enim tristique laoreet a sed dui. Ut feugiat purus lorem, fringilla tempor nulla dignissim tincidunt. In ultricies sagittis laoreet. Ut ex magna, hendrerit sed nisl et, efficitur scelerisque erat. Sed ut ipsum ac mi luctus pellentesque ac at nulla. Aenean rutrum augue libero, id vulputate eros bibendum a. Praesent venenatis, nulla vulputate suscipit sagittis, nunc ex lacinia dolor, et vulputate nisl tortor vel metus. Vivamus maximus, nisl quis rutrum malesuada, turpis quam tempus metus, at fringilla purus turpis ut nunc.
+                            </p>
+                            <p>
+Cras tempor sed lacus eu malesuada. Aliquam erat volutpat. Pellentesque posuere rutrum nisl, ac aliquam quam finibus vel. Quisque condimentum neque eu quam euismod consectetur. Integer ultrices gravida semper. Phasellus in auctor nulla. Vivamus scelerisque, purus porttitor lacinia sodales, leo libero maximus erat, nec interdum justo ipsum feugiat ex. Nullam quis vestibulum nulla. Maecenas aliquet nunc semper, condimentum leo at, scelerisque dolor.                            </p>
                             <div class="clearfix"></div>
-                        </article>      
-                        
-                    <!--AÑADIR ARTICULOS VIA JS-->    
-                    
-                    </div>                  
-                    
+                        </article>                                     
                 </section>
                 
                 <aside id="sidebar">
@@ -121,6 +82,9 @@
                         &copy; Master en frameworks JS      
                     </p>
                 </div>
-            </footer>        
+            </footer>
+
+            
+        </header>
     </body>
 </html>
